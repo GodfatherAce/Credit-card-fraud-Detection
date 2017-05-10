@@ -1,0 +1,20 @@
+import pandas as pd
+import theano
+fields=['Avg_Salary','age','balance','Annual_Sal','Gender','credit_score','credit_usage','property_magnitude ','credit_history','class']
+df = pd.read_csv('Sample_Data.csv',usecols=fields)
+X = df.iloc[:, 1:].values
+y = df.iloc[:, 0].values
+df = 0
+print(X.shape)
+print(y.shape)
+
+import matplotlib.pyplot as plt
+%matplotlib inline
+
+def plot_digit(X, y, idx):
+    img = X[idx].shape
+    plt.imshow(img, cmap='Greys',  interpolation='nearest')
+    plt.title('true label: %d' % y[idx])
+    plt.show()
+
+plot_digit(X, y, 10) 

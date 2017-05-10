@@ -1,1 +1,2 @@
 # Credit-card-fraud-Detection
+Credit card fraud detection prediction. Tried to implement a simple algorithm to understand when there is a fraud transaction that is happening using a credit card. Tried to implement Deep Learning algorithm. Code snippets not available as it is work still in progress.
